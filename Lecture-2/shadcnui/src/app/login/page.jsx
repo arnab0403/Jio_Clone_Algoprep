@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input"
 function page() {
   return (
     <div className="bg-[#0c0a09] h-[100vh] flex justify-center items-center">
-        <Card className="h-[400px] w-[400px] bg-[#1c1917] text-white rounded-[10px] border border-[#2c2c2c]">
+        <Card className="sm:h-[400px] sm:w-[400px]  bg-[#1c1917] text-white rounded-[10px] border border-[#2c2c2c]">
             <CardHeader>
                 <CardTitle className="text-2xl">Login</CardTitle>
                 <CardDescription>Enter your email below to login to your account.</CardDescription>
