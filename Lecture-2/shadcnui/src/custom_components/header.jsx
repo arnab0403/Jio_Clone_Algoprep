@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 
 function Header() {
   return (
+    <>
     <div className='h-[70px] bg-[#0d0e10]  flex items-center justify-between px-[20px] border-b border-[#464646] absolute w-[100vw] top-0'>
         <div className='flex gap-6 items-center'>
             <Image src={`https://jio-cinema-clone-1.vercel.app/logo.svg`} width={130} height={130} alt='jio cinema'/>
@@ -37,6 +38,7 @@ function Header() {
         </div>
         
     </div>
+    </>
   )
 }
 
