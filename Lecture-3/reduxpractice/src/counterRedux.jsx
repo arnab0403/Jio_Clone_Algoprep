@@ -1,15 +1,20 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux';
 
+import CounterSlice from './counterSlice';
+const actions = CounterSlice.actions;
 
 function CounterRedux() {
-    const count = useSelector((store) =>  store.counterState.count)
+    const count = useSelector((store) =>  store.counterState.count);
+    const dispatch = useDispatch();
+
     const increament=()=>{
         console.log(" inc ")
+        dispatch(actions.increment());
     }
 
     const decreamnt=()=>{
-        console.log(" dec ")
+        console.log(" dec ");
+        dispatch(actions.decrement());
     }
   return (
     <div>
