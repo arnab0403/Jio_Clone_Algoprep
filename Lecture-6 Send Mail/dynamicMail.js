@@ -45,7 +45,6 @@ async function otpSend(userMail,userName,otp){
                     &copy; 2025 Your Company. All rights reserved.
                 </div>
             </div>
-    
         `;
     const info = await transporter.sendMail({
     from: 'arnabdutta8584@gmail.com',
